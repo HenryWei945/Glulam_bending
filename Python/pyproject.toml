@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glulam"
+version = "1.0.0"
+description = "Statistical analysis of EN 408 bending tests on approval-based glulam products (EJWWP manuscript)"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "pandas>=2.2", "scipy>=1.13", "statsmodels>=0.14", "matplotlib>=3.8",
+                "pymc>=5.10", "arviz>=0.18"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
